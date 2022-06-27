@@ -26,6 +26,13 @@ img{
   height: auto;
 }
 
+
+/* Outline styles */
+*:focus{
+outline: 2px dashed #7296EC;
+outline-offset: 3px;
+}
+
 /* Button */
 
 .button{
@@ -113,6 +120,24 @@ img{
 }
 .currency-rates-type {
 color: #2959CE;
+}
+
+
+/* Gloabal-search-form */
+
+.global-search-form{
+  margin-right: 25px;
+}
+
+.global-search-form-input{
+  padding-top: 15px;
+  padding-right: 20px;
+  padding-bottom: 13px;
+  padding-left: 40px;
+  border: 0;
+  border-radius: 60px;
+  font-size: 14px;
+  line-height: normal;
 }
 
 
