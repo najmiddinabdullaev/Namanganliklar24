@@ -240,6 +240,7 @@ display: flex;
 .main-content{
   flex-grow: 1;
   padding-top: 50px;
+  padding-bottom: 100px;
 }
 
 
@@ -342,7 +343,7 @@ display: flex;
 /* Global-news */
 
 .global-news{
-  width: 797px;
+
 }
 
 .global-news-heading {
@@ -437,4 +438,102 @@ display: flex;
 
 .news-list-more-button{
   padding: 17px;
+}
+
+
+/* Layout */
+
+.layout-2-1{
+  display: flex;
+  align-items: flex-start;
+}
+
+.layout-2-1-main{
+  width: 797px;
+  margin-right: 10px;
+}
+
+.layout-2-1-sidebar{
+width: 393px;
+margin-top: 49px;
+}
+
+.layout-2-1-sidebar-item:not(:last-child){
+  margin-bottom: 10px;
+}
+
+
+/* Sidebar-news-card */
+
+.sidebar-news-card {
+  padding: 20px;
+  border-radius: 15px;
+  background-color: #f6f6f6;
+  color: black;
+}
+
+.sidebar-news-card-heading {
+  margin-top: 0;
+  margin-bottom: 25px;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 24px;
+}
+
+.sidebar-news-card-item {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.sidebar-news-card-item:first-child{
+  padding-top: 0;
+}
+
+.sidebar-news-card-item:last-child{
+  padding-bottom: 0;
+}
+
+.sidebar-news-card-item:not(:last-child){
+border-bottom: 1px solid #d2d2d2;
+}
+
+.sidebar-news-card-title {
+  margin-top: 0;
+  margin-bottom: 8px;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 24px;
+}
+
+.sidebar-news-card-link {
+  display: inline-block;
+  color: black;
+  text-decoration: none;
+}
+
+.sidebar-news-card-link:hover{
+  color: #7296EC;
+}
+
+.sidebar-news-card-link:active{
+  opacity: 0.6;
+}
+
+.sidebar-news-card-source-time {
+  font-size: 13px;
+  line-height: normal;
+  color: #5e5f61;
+}
+
+
+/* Sidebar-Ad */
+
+.sidebar-ad-link{
+display: flex;
+}
+
+.sidebar-ad-img{
+  width: 393px;
+  height: 338px;
+  object-fit: cover;
 }
