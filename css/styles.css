@@ -536,6 +536,10 @@ display: flex;
   object-fit: cover;
 }
 
+.sidebar-ad-img-tall{
+  height: 553px;
+}
+
 
 /* Site footer */
 
