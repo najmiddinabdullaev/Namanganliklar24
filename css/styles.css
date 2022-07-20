@@ -82,7 +82,6 @@ outline-offset: 3px;
   margin-right: auto;
 }
 
-/* Site-header */
 
 /* Site-header-top */
 .site-header-top {
@@ -111,8 +110,6 @@ outline-offset: 3px;
 
 .site-header-logo:active{
   opacity: 0.6;
-}
-.site-header-logo-img {
 }
 
 /* Currency-rates */
@@ -148,6 +145,10 @@ color: #2959CE;
   border-radius: 60px;
   font-size: 14px;
   line-height: normal;
+  background-image: url(../img/icon-search.svg);
+  background-repeat: no-repeat;
+  background-size: 20px;
+  background-position: 15px center;
 }
 
 
@@ -327,6 +328,10 @@ display: flex;
   margin: 60px 75px;
   border-radius: 10px;
   background-color: #ffd7ba;
+  background-image: url(../img/global-notifications-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
 }
 
 .notification-cta-text {
@@ -335,22 +340,14 @@ display: flex;
   line-height: 26px;
   color: black;
 }
-.button {
-}
-.button-orange {
-}
 
 
 /* Global-news */
 
-.global-news{
-
-}
-
 .global-news-heading {
   margin-top: 0;
   margin-bottom: 20px;
-  font-size: 24;
+  font-size: 24px;
   font-weight: 500;
   line-height: normal;
   color: black;
@@ -620,8 +617,8 @@ display: flex;
 }
 
 .site-footer-divider {
-  height: 1;
-  border: 1;
+  height: 1px;
+  border: 1px;
   margin-top: 30px;
   margin-bottom: 20px;
   background-color: #cecece;
@@ -700,6 +697,37 @@ display: flex;
 }
 
 
+/* Definitions */
+
+.definitions-card{
+  padding: 20px 25px;
+  margin: 0;
+  border-radius: 10px;
+  background-color: #f6f6f6;
+  color: black;
+}
+
+.definitions-card-item{
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.definitions-card-item:not(:last-child){
+  border-bottom: 1px solid #d2d2d2;
+}
+
+.definitions-card-title{
+  margin-bottom: 7px;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 500;
+}
+
+.definitions-card-value{
+  margin: 0;
+  font-size: 16px;
+  line-height: 19px;
+}
 
 /* CONTACT PAGE */
 
@@ -712,6 +740,10 @@ display: flex;
   color: black;
 }
 
+.contact-page-content{
+  display: flex;
+}
+
 .contact-page-form{
   display: flex;
   flex-direction: column;
@@ -721,4 +753,25 @@ display: flex;
 .contact-page-form-submit{
   align-self: flex-end;
   margin-top: 20px;
+}
+
+.contact-page-info{
+  width: 496px;
+  margin-left: 10px;
+}
+
+
+
+/* Retina bgs */
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) {
+ .notification-cta{
+  background-image: url(../img/global-notifications-bg@2x.jpg);
+ }
 }
